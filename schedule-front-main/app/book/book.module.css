@@ -1,0 +1,127 @@
+.main {
+  min-height: 95vh;
+  background-color: #f4f4f9;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 2rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 80vw;
+  min-height: 90vh;
+  width: 100%;
+}
+
+.filterItems {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filterItems > * {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.filterItems > *:hover {
+    background-color: #e0e0e0;
+    border-color: #b3b3b3;
+}
+
+.select {
+  width: 10vw !important;
+}
+
+.rooms {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr); 
+  padding: 24px;
+  margin: 0 auto;
+}
+
+.descModal {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+  margin: auto;
+}
+
+.descLabel {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.descInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.descInput:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.descInput::placeholder {
+  color: #aaa;
+}
+
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modalContent {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.descInput {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  
+}
